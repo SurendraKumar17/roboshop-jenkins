@@ -3,9 +3,8 @@
     src: job.xml
     dest: /tmp/job.xml
 
-
 - name: create
-  community.general.jenkins_jobs:
+  community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/job.xml') }}"
     name: test
     url: https://18.234.160.149:8080
