@@ -5,7 +5,7 @@
     url: http://172.31.0.183:8080
     user: admin
     password: "{{jenkins_password}}"
-  loop: "{{ folders }}"
+  loop: "{{ CIPipelines }}"
 
 - name: Create Multi Branch Pipeline Jobs
   ansible.builtin.include_tasks: pipeline.yml
