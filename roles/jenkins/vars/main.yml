@@ -13,5 +13,4 @@ folders:
 
 sbranch_pipeline_jobs:
   - {name: "roboshop-infra", dir: "Infra"}
-  - {name: "roboshop-ansible", dir: "CD"}
 
