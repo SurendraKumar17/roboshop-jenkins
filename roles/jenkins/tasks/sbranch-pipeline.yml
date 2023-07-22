@@ -8,7 +8,7 @@
   ansible.builtin.template:
     src: s-job.xml
     dest: /tmp/s-job.xml
-  when: out.rc == 3
+#  when: out.rc == 3
 
 
 - name: Create Job - {{item.dir}}/{{item.name}}
@@ -18,4 +18,4 @@
     url: http://172.31.6.132:8080
     user: admin
     password: "{{jenkins_password}}"
-  when: out.rc == 3
+#  when: out.rc == 3
